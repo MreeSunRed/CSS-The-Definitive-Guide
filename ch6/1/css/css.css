@@ -1,0 +1,76 @@
+/* p[indent]{
+    text-indent:10%;
+    padding-left: 2em;
+    /* text-align: start;
+    text-align: start; */
+/* text-align: left;
+    text-align-last: right;
+    line-height:99px;
+    font-size:xx-large; */
+/* }  */
+div {
+  width: 400px;
+}
+span#sub {
+  vertical-align: sub;
+  color: aqua;
+}
+span#super {
+  vertical-align: super;
+}
+span#bottom {
+  vertical-align: bottom;
+}
+span#top {
+  vertical-align: top;
+}
+span#middle {
+  vertical-align: middle;
+}
+span#hundred {
+  vertical-align: 100%;
+}
+p {
+  word-spacing: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  text-decoration: line-through;
+}
+a {
+  text-decoration: line-through;
+  color: black;
+}
+a:hover {
+  font-size: larger;
+}
+strong {
+  text-decoration: none;
+}
+p#shadow {
+  all: initial;
+  display: block;
+  text-shadow: green 5px 0.5em, red 6px 0.5em,
+    hsla(248, 91%, 51%, 0.838) 2px 0.5em, 1em 0.5em 5px red, -1em -1em 1px red;
+}
+
+p#white {
+  all: initial;
+  display: block;
+  white-space: pre-line;
+  
+}
+
+p#hyphens {
+  all: initial;
+  display: block;
+  hyphens: manual;
+  
+}
+
+p#write{
+  all: initial;
+  display: block;
+  writing-mode:vertical-lr;
+  text-orientation: sideways;
+}
+

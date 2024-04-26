@@ -1,0 +1,29 @@
+body{
+  background-image: url(imgs/1.jpg),url(imgs/3.jpg);
+  /* background-repeat: no-repeat; */
+  /* background-position:  left top; */
+  /* background-repeat: round; */
+  /* background-repeat:repeat-x; */
+  /* background-size: 100 auto ; */
+  /* background-size: cover;
+  background-attachment: fixed; */
+  /* background: url(imgs/1.jpg) center/cover content-box content-box fixed; */
+  background-repeat: no-repeat;
+  background-position: 0 4em,0 12em;
+  background-repeat: repeat-x,repeat-x;
+}
+p#img{
+ background-image: url(imgs/2.jpg);
+  background-repeat: no-repeat;
+  width: 10em;
+  height: 5em;
+  background-position: top right;
+}
+p#img2{
+ background-image: url(imgs/2.jpg);
+  background-repeat: no-repeat;
+  width: 10em;
+  height: 5em;
+  background-position: right 10px bottom ;
+  background-origin: padding-box;
+}

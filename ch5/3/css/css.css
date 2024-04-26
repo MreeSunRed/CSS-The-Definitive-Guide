@@ -1,0 +1,22 @@
+/* body {
+  font-family: sans-serif;
+  font-kerning: auto;
+  font-variant: small-caps;
+  font-size: large;
+} */
+strong {
+  font-stretch: extra-expanded;
+  font-size: inherit;
+  font-feature-settings: "zero" on;
+}
+footer {
+  font-stretch: extra-condensed;
+}
+p[aa]{
+  all:initial;
+  font: italic bolder xx-large/1 serif;
+}
+h1,h2,h3{font:italic small-caps 250% sans-serif;}
+h2{font:200% sans-serif;}
+h3{font-size:150%;}
+button{font:caption;font-size: large;}

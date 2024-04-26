@@ -1,0 +1,87 @@
+p[a]::before {
+  content: "(link) ";
+}
+p[a] {
+  text-decoration: underline;
+}
+p[b]::before {
+  content: url(imgs/3.jpg);
+}
+p[b] {
+  display: inline;
+  border: solid 1px gray;
+}
+p[b]::after {
+  content: "aadadaddadad";
+}
+p[c]::before {
+  content: "c=" attr(c);
+}
+quote {
+  quotes: "“" "”";
+}
+quote::before {
+  content: open-quote;
+}
+quote::after {
+  content: close-quote;
+}
+quote {
+  quotes: "1" "2" "3" "4";
+}
+quote::before,
+p::before {
+  content: open-quote;
+}
+quote::after,
+p::after {
+  content: close-quote;
+}
+list.orderd {
+  counter-reset: ordered;
+}
+list.orderd item {
+  display: block;
+}
+list.orderd item::before {
+  counter-increment: ordered;
+  content: counter(ordered) ".";
+}
+h1 {
+  counter-reset: htwo;
+}
+h1::before {
+  counter-increment: hone;
+  content: counters(hone, ".") ":";
+}
+h2 {
+  counter-reset: hthree;
+  counter-increment: htwo;
+}
+h2::before {
+  content: counter(hone) "." counter(htwo);
+}
+body {
+  counter-reset: hone;
+}
+h3 {
+  counter-increment: hthree;
+}
+h3::before {
+  content: counter(hone) "." counter(htwo) "." counter(hthree, lower-roman) " ";
+}
+ol {
+  counter-reset: ordered;
+  list-style: none;
+}
+ol li::before {
+  content: counters(ordered, ".") ":";
+  counter-increment: ordered;
+}
+@counter-style emoji{
+  system:fixed;
+  symbol:🙂🙂🙂🙂；
+}
+ol.emoji{
+  list-style: emoji;
+}

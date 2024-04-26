@@ -1,0 +1,59 @@
+
+p {
+  /* background-color: blueviolet; */
+  padding:50px;
+  font-size: 50px;
+  background-image: linear-gradient(purple,gold);
+  margin:0;
+  text-align: center;
+}
+p#a{
+  background-image: linear-gradient(90deg,purple,gold);
+}
+p#b{
+  background-image: linear-gradient(to left,purple,gold,navy);
+}
+p#c{
+  background-image: linear-gradient(-135deg,purple,gold,navy);
+}
+p#e{
+  background-image: linear-gradient(90deg,red,orange 25px,yellow 35px,green 45px,blue 65%,68%, purple);
+}
+p#f{
+  background-image: linear-gradient(90deg,transparent -1px,red 0%,red 10%,blue 10%,blue 25%,orange 25%,yellow 40%,yellow 50%,green 50%,green 70%,purple 70%);
+}
+p#g{
+  width: 10em;
+  height:7em;
+   background-image: linear-gradient(40deg,red -20%,yellow 50%,blue 125%);
+   box-shadow: 1em 2em 2em red;
+}
+h1{
+  width: 500px;
+  padding:50px;
+  font-size: 50px;
+  background-image: linear-gradient(purple,gold);
+  margin:0;
+  text-align: center;
+}
+h1.a{
+  background-image: radial-gradient(30px 30px at 25% 66%,purple ,gold);
+  background-size: 80px 100px;
+  background-position: 0px -30px;
+  background-repeat: round;
+  
+}
+h1.b{
+  background-image: radial-gradient(500px 1px  at center ,purple 1000%,gold);
+}
+h1.c{
+  /* background-image: linear-gradient(45deg ,transparent 0px,transparent 50%,black 50%,black 60%,transparent 60%); */
+  background-image: linear-gradient(to left,purple,gold,purple);
+  background-size: 20% 100%;
+  background-position: 0%;
+  background-repeat: repeat-x;
+}
+h1.d{
+  background:repeating-radial-gradient(red,orange 25%,yellow 35%,green 45%,blue 65%,68%, purple);
+ /* background-image: radial-gradient( red,orange 25%,yellow 35%,green 45%,blue 65%,68%, purple); */
+}

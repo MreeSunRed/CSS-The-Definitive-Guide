@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "H";
+  font-weight: bold;
+  font-size: larger;
+  font-style: italic;
+  src: url("freeword.otf") format("opentype");
+}
+b {
+  font-family: "H", serif;
+}
+p {
+  font-weight: bold;
+}
+p em {
+  font-weight: bolder;
+}
+p[one] {
+  font-size: xx-small;
+}
+p[two] {
+  font-size: x-small;
+}
+p[three] {
+  font-size: small;
+}
+p[four] {
+  font-size: medium;
+}
+p[five] {
+  font-size: large;
+}
+p[six] {
+  font-size: x-large;
+}
+p[seven] {
+  font-size: xx-large;
+}
+p#a {
+  font-size: xx-large;
+  font-size-adjust: auto;
+}
+strong,
+em {
+  font-size: 1.2em;
+}
+p#style{
+  font-style: oblique;
+}

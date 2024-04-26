@@ -1,0 +1,46 @@
+a:link,
+a:visited {
+  text-decoration: none;
+}
+#toolbar {
+  background: blue;
+  color: white;
+  all: initial;
+}
+#toolbar a {
+  color: inherit;
+}
+h1 {
+  font-size: calc(1px+10px);
+}
+h1::first-letter {
+  color: #999;
+}
+h1#h1::before {
+  content: "[" attr(id) "]";
+}
+h2[uid="h2"]::before {
+  content: "[" attr(uid) "]";
+}
+input[type="text"] {
+  width: attr(maxlength em);
+}
+/* input[type="text"]::before{
+    content: "["attr(id)"]";
+} */
+h1 {
+  color: lightgreen;
+}
+h2 {
+  color: fuchsia;
+}
+h3 {
+  color: hsl(159, 72%, 37%);
+}
+html {
+  --base--color: red;
+}
+/* h1{pitch:1hz;} */
+h4 {
+  color: var(--base--color);
+}

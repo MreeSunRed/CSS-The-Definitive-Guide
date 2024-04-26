@@ -1,0 +1,36 @@
+img#a{
+    float:right;
+    float: left;
+    /* float: none; */
+    padding:5px;
+    border-style: solid;
+    /* margin:10px -15px -10px 10px; */
+    /* clear: both; */
+    /* shape-outside: circle(60% at center);
+     */
+     shape-outside: polygon(50% 0,100% 50%,50% 100%,0 50%) padding-box;
+     shape-image-threshold: 1;
+     color:rgba(0, 255, 255, 0.25);
+     background-color: rgba(240, 248, 255, 0.11);
+     shape-margin: 1em;
+}
+h1{
+    float:left;
+    clear: both; 
+}
+img#b{
+    float: left;
+}
+/* div{
+    height: 100em;
+    overflow: hidden;
+} */
+p{
+    clear:both;
+    font-size: 10px;
+}
+img#c{
+    float: left;
+}h3{
+    clear: left;
+}

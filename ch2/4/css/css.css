@@ -1,0 +1,92 @@
+h1 em {
+  color: grey;
+}
+p strong a {
+  color: red;
+}
+ul li ol {
+  color: gray;
+}
+/* html{background-color: aqua;} */
+blockquote b,
+p b {
+  color: gray;
+}
+blockquote > strong {
+  color: red;
+}
+:root {
+  border: 10px dotted gray;
+}
+body {
+  border: 10px solid black;
+}
+a[testa] {
+  color: blue;
+  display: block;
+}
+a[testa]:visited {
+  color: red;
+}
+ul > li:nth-child(2) {
+  background-color: blue;
+}
+a:focus {
+  color: green;
+}
+/* input:focus {
+  background: silver;
+  font-weight:bold;
+} */
+a:hover {
+  font-size: 20px;
+}
+a:active {
+  font-size: 30px;
+}
+body *:hover {
+  background: yellow;
+}
+:enabled {
+  font-weight: bold;
+}
+:disabled {
+  opacity: 0.5;
+}
+:checked {
+  background: silver;
+}
+:indeterminate {
+  border: red;
+}
+input[type="checkbox"]:default + label {
+  color: red;
+  font-style: italic;
+}
+input[type="checkbox"][aa]:checked + label {
+  color: red;
+  font-style: italic;
+}
+input[text3] {
+  display: block;
+}
+input:required {
+  border: 1px solid #f00;
+}
+input:optional {
+  border: 1px solid #ccc;
+}
+
+input[type="email"]:focus:invalid {
+  background-color: red;
+}
+input[type="email"]:focus:valid {
+  background-color: chartreuse;
+}
+input[type="email"]:focus {
+  background-color: red;
+}
+p::first-letter{color:red;}
+p::first-line{color:purple;}
+body::before{content: "[[";}
+body::after{content: "]]";}

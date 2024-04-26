@@ -1,0 +1,76 @@
+img#a {
+  position: absolute;
+  left: 20%;
+  max-width: 10em;
+}
+div#b {
+  background-color: aqua;
+  height: 5em;
+  overflow: visible;
+  overflow: hidden;
+  overflow: scroll;
+  overflow: auto;
+}
+img#b {
+  width: 10em;
+}
+
+div#c {
+  position:relative;
+  top:-100px;
+  margin-top: 5em;
+  background-color: red;
+  height: 5em;
+  overflow: scroll;
+  z-index: 10;
+
+}
+img#c {
+  width: 10em;
+  /* visibility: hidden; */
+  
+}
+p.a{
+    position:relative;
+}
+b{
+    position: absolute;
+    top:auto;
+    left: auto;
+    bottom: 0;
+    right:0;
+    border:1px solid gray;
+    width: 8em;
+    height: 5em;
+    overflow: scroll;
+}
+img#d {
+  width: 10em;
+  /* visibility: hidden; */
+  position: fixed;
+}
+div#d{
+  top:0;
+  right: 20%;
+  position: fixed;
+}
+
+img#e {
+  width: 10em;
+  /* visibility: hidden; */
+  /* position: fixed; */
+}
+div#e{
+  top:0;
+  /* overflow: hidden; */
+  position: sticky;
+  left: 10em;
+  top :10em;
+}
+#test{
+  background-color: peru;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top:2em;
+}

@@ -1,0 +1,101 @@
+p {
+  /* display: inline-block; */
+  animation: change_bgcolor, change_font;
+  animation-duration: 2s,2s;
+  font-size: medium;
+  animation-iteration-count: 2, 2;
+  /* animation-direction: reverse; */
+  animation-direction: alternate-reverse;
+  /* animation-play-state: paused; */
+  animation-fill-mode: forwards;
+}
+@keyframes change_bgcolor {
+  0%,
+  100% {
+    background-color: rgb(0, 255, 251);
+  }
+  45%,
+  55% {
+    background: red;
+  }
+  75%,
+  35% {
+    background: rgb(6, 251, 6);
+  }
+}
+@keyframes change_font {
+  0%,
+  100% {
+    font-size: medium;
+  }
+  45%,
+  55% {
+    font-size: xx-large;
+  }
+  75%,
+  35% {
+    font-size: xx-small;
+  }
+}
+div#color{
+  height:10em;
+  width: 10em;
+  border:solid;
+  animation-name: colorred,colorblue,coloryellow,colorwhite;
+  animation-duration: 2s,2s,2s,2s;
+  animation-delay: 1s,3s,5s,7s;
+  /* animation-iteration-count: infinite; */
+}
+h1 {
+  display: inline-block;
+  animation-name: bouncing;
+  animation-duration: 100ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: -100s;
+  /* animation-timing-functi/*8969.on:  cubic-bezier(0.68, -0.55, 0.265, 1.55) ; */
+  animation:100ms -100ms infinite alternate-reverse ease-out  bouncing;
+}
+h1:hover{
+  animation-play-state: paused;
+}
+@keyframes bouncing {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes colorred {
+  from {
+    background-color: white;
+  }
+  to {
+   background-color: red;
+  }
+}
+@keyframes colorblue {
+  from {
+    background-color: red;
+  }
+  to {
+   background-color: blue;
+  }
+}
+@keyframes coloryellow {
+  from {
+    background-color: blue;
+  }
+  to {
+   background-color: yellow;
+  }
+}
+@keyframes colorwhite {
+  from {
+    background-color: yellow;
+  }
+  to {
+   background-color: white;
+  }
+}

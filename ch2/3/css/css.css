@@ -1,0 +1,11 @@
+#lead-para{
+    font-weight:bold;
+}
+p[class]{
+    color:silver;
+}
+pml-planet{
+    display: block;
+}
+/* pml-planet[moons]{font-weight:bold;} */
+pml-planet[suns][moons="2"]{font-weight: bold;font-size:200%;}

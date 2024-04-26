@@ -1,0 +1,46 @@
+/* body{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+     align-content: space-evenly;
+} */
+/* div{ 
+    display: flex;
+    flex-flow: column;
+    height: auto;
+    width: 100%;
+    background-color: aqua;
+ 
+    align-items: center;
+    justify-content: center;
+}
+div div{
+    height: 5em;
+    width: 10em;
+    background-color: #10f700;
+
+} */
+ol li {
+  list-style-type: lower-greek;
+}
+li.off {
+  list-style-type: none;
+}
+li.emo{
+     list-style-type: "🤔";
+}
+li.cd{
+     list-style-type: "%";
+}
+ol.img li{
+    list-style-image: url(imgs/1.jpg);
+    list-style-type: disc;
+    list-style-position: inside;
+    list-style:  disc url(imgs/1.jpg) inside;
+}
+ol.img li.color{
+        list-style-image: linear-gradient(45deg ,red, blue);
+        list-style-position: outside;
+        list-style: outside linear-gradient(45deg ,red, blue);
+}

@@ -1,0 +1,48 @@
+p#gray{
+  color:yellow;
+  border:solid;
+  /* border-color: currentColor; */
+  border-color: black;
+  width: 10em;
+}
+select{
+  color:aqua
+}
+input{
+  color:darkviolet
+}
+h1{
+  color:white;
+  background-color: rgb(20%,20%,20%);
+  font-family: Arial, sans-serif;
+  /* margin:100px */
+}
+p#ap{
+  background-color: aqua;
+  border-style: dashed;
+  padding:10px;
+  border-width: 5px;
+  background-clip: border-box;
+}
+p#bp{
+  background-color: aqua;
+  border-style: dashed;
+  padding:10px;
+  border-width: 5px;
+  background-clip: padding-box;
+  background-image: url(imgs/3.jpg);
+}
+p#cp{
+  /* background: red; */
+  background-color: red;
+  color: rgba(0, 255, 255, 0.685);
+  border-style: dashed;
+  padding:10px;
+  border-width: 5px;
+  background-clip: content-box;
+  background-clip: text;
+  background-image: url(imgs/2.jpg);
+}
+body{
+  background-image: url(imgs/2.gif);
+}

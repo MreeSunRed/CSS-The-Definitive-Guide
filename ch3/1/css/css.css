@@ -1,0 +1,38 @@
+h1 + p {
+  color: black;
+  font-style: italic;
+}
+p {
+  color: gray;
+  background: white;
+  font-style: normal;
+}
+*.aside {
+  color: black;
+  background: silver;
+}
+h1 {
+  color: gray;
+}
+toolbar {
+  color: white;
+  background: black;
+}
+toolbar a:invalid {
+  color: inherit;
+}
+a:link {
+  color: blue;
+}
+a:valid {
+  color: purple;
+}
+a:focus {
+  color: green;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: orange;
+}

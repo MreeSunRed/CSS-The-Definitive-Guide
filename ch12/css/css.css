@@ -1,0 +1,123 @@
+div#one {
+  display: flex;
+  height: 10em;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  align-content: space-evenly;
+}
+div#two {
+  display: inline-flex;
+}
+div {
+  border: 1px solid;
+  background: silver;
+  flex-wrap: wrap;
+}
+div > * {
+  
+  border: 1px solid;
+  background: #aaa;
+}
+div p {
+  margin: 0;
+}
+oi#oia {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  flex-direction: column-reverse;
+  /* flex-flow: column wrap-reverse; */
+  align-items: stretch;
+  min-width: 10em;
+  max-width: 10em;
+  align-content: center;
+}
+oi#oia:hover {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  flex-direction: column-reverse;
+  /* flex-flow: column wrap-reverse; */
+  align-items: flex-end;
+}
+li {
+  background-color: aqua;
+}
+li:nth-of-type(3n-1){
+  order:3;
+  background-color:rgba(22, 22, 190, 0.783)
+}
+li:nth-of-type(3n+1){
+  order:-1;
+  background-color: rgba(184, 213, 19, 0.892);
+}
+li#aa {
+  align-self: flex-end;
+}
+div#diva {
+  display: flex;
+  width: 750px;
+  flex-wrap: nowrap;
+}
+div#diva p.aa {
+  width: 500px;
+  flex: 2 0.5 100%;
+  flex-shrink: 0.5;
+}
+div#diva p,
+bb {
+  width: 500px;
+  flex: 2 0.25 auto;
+}
+div#diva p.cc {
+  width: 500px;
+  flex: 2 0.25 auto;
+}
+div#divb {
+  margin-top: 5em;
+  display: flex;
+  /* flex-flow: row; */
+  flex-direction: column;/*垂直排列*/
+  flex-wrap: nowrap;
+  height: 20em;
+}
+div#divb > div {
+  display: flex;
+  flex-grow: 0;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+}
+div#aaa{
+  display: flex;
+  justify-content: center;
+  align-items:stretch;
+  flex-direction: column;
+}
+div#aaa p{
+  flex:auto;
+  text-align: center;
+}
+p.ap {
+  flex-grow: 1;
+}
+nav{
+  margin:10px;
+  display: flex;
+  border:black solid;
+  justify-content: flex-start;
+}
+nav>a{
+  margin: 10px;
+  background-color: rgb(0, 183, 255);
+}
+
+nav>a:focus{
+  margin: 10px;
+  background-color: rgb(0, 183, 255);
+  order:-1;
+}
+#app{
+  margin:auto;
+}

@@ -1,0 +1,76 @@
+p {
+  display: inline-block;
+  border: solid;
+  /* rotate: -45deg; */
+  transform: rotateZ(-45deg) translateY(252px) scale(2) skewX(-25deg)
+    perspective(600px);
+}
+h1 {
+  display: inline-block;
+  border: solid;
+  transform: translate(50%, 100%) translate3d(50%, 100%, 100px) scale(2, 0.5)
+    scale3d(1.5, 5, 10) translate(-1em) rotate3d(1, 0, 0, -80deg) skewX(-45deg)
+    skewY(-45deg) perspective(200px) /*matrix()*/;
+}
+h2 {
+  display: inline-block;
+  border: solid;
+  transform: translateY(2em) perspective(600px) rotateX(-40deg);
+}
+/* body{
+  transform-style: preserve-3d;
+  transform: translateY(2em) perspective(600px) rotateX(-40deg);
+} */
+origin {
+  display: inline-block;
+  transform-origin: 50% top;
+  transform: rotateZ(-180deg);
+}
+div#outer {
+  position: relative;
+  left: 6em;
+  transform: perspective(750px) translateZ(60px) rotateX(-40deg);
+  transform-style: preserve-3d;
+  perspective: 800px;
+  perspective-origin: 100% 50%;
+}
+div#inner {
+  position: relative;
+  left: 1em;
+  transform: perspective(750px) translateZ(60px) rotateX(45deg);
+}
+div.test {
+  transform-style: preserve-3d;
+  position: relative;
+  left: 3em;
+  display: block;
+  font-size: 50px;
+  transform: perspective(2250px) rotateX(5deg);
+  perspective: 25px;
+  perspective-origin:0 50% ;
+}
+div.test h3 {
+  left: 3em;
+  transform: perspective(25px) rotateX(25deg) ;/* perspective要放在首位*/
+}
+h4.visibility{
+  font-size: 255px;
+  transform: rotateX(180deg);
+  backface-visibility: visible;
+}
+h4.visibility:hover{
+  background-color: aqua;
+  font-size: 255px;
+  transform: rotateX(180deg);
+  backface-visibility: visible;
+}
+div.hiden{
+  font-size: 255px;
+  backface-visibility: hidden;
+}
+div.hiden :hover{
+  font-size: 255px;
+  transform: rotateX(180deg);
+  backface-visibility:hidden;
+}
+

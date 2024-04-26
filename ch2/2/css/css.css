@@ -1,0 +1,18 @@
+/* p.warning{
+    font-weight:bold;
+}
+span.warning{
+    font-style:italic;
+} */
+.warning{
+    font-style:bold;
+}
+.urgent{
+    font-style:italic;
+}
+.urgent.warning{
+    background:silver;
+}
+.urgent.help{
+    background:red;
+}

@@ -1,0 +1,4 @@
+img{
+    filter:blur(1px) opacity(95%) drop-shadow(1px 1px 1px  black) grayscale(25%) sepia(50%)invert(0.9) hue-rotate(180deg);
+
+}

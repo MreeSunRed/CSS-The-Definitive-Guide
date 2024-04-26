@@ -1,0 +1,8 @@
+p {
+  display: inline;
+}
+em {
+  display: block;
+}
+book,maintitle,subtitle,author,isbn{display: block;}
+publisher,pubdate{display: inline;}

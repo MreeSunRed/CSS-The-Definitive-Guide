@@ -1,0 +1,24 @@
+html{
+    color:black;
+}
+h1{
+    font:18px Helvetica;color:purple;background: aqua; 
+}
+h2{
+    color:silver ;
+}
+p{
+    font-weight: bold;
+    color:red;
+}
+*{
+    color:red;
+}
+h1,h2,h3{
+    color:gray;
+    background:
+    white;
+    padding:0.5em;
+    border:1px solid black;
+    font-family:Charcoal,sans-serif;
+}

@@ -1,0 +1,49 @@
+button {
+  color: magenta;
+  transition: color 200ms ease-in 50ms;
+}
+button:hover {
+  color: rgb(237, 126, 8);
+  transition: color 200ms ease-out 50ms;
+}
+nav ul li {
+  border: solid;
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+  transition-delay: 50ms;
+  transform: scale(1, 0);
+  transform-origin: top center;
+  list-style-type: "";
+}
+nav:hover ul li {
+  transform: scale(1, 1);
+}
+nav {
+  display: inline-block;
+}
+a {
+  border: solid;
+}
+div.a {
+  display: inline-block;
+  border: solid; /*border-style不支持动画*/
+  color: red;
+  font-size: small;
+  transition-property: border, color, font-size;
+  transition-duration: 200ms;
+  /* transition-timing-function: cubic-bezier(0.1,0.9,0.2,0.10); */
+  /* transition-timing-function: cubic-bezier(0.2,0.1,0.1,0.9); */
+  transition-timing-function: step-end;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-delay: 0.1s;
+  /* transition-delay: 0ms,0.2s,0.4s; */
+  transition:  200ms  cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+}
+div.a:hover {
+  border: dotted;
+  color: blue;
+  font-size: xx-large;
+   /* transition:  200ms  linear; */
+  transition-property:border,color,font-size;
+}

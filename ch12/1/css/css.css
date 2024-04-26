@@ -1,0 +1,15 @@
+*{
+    outline: 1px #ccc solid;
+    margin:10px;
+    padding:10px;
+}
+body ,nav,article,main{
+    display: flex;
+    flex-wrap: wrap;
+}
+body,article{
+    flex-direction: column;
+}
+img{
+    width: 5em;
+}

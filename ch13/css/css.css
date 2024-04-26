@@ -1,0 +1,119 @@
+/* #grid {
+  display: grid;
+  grid-template-columns: 10em;
+  grid-template-areas:
+    "h h h"
+    "l c r"
+    "f f f";
+  grid-template-columns: [begin] 1fr 20em 1fr;
+  grid-template-rows: 40px [content] 1fr 3em;
+}
+.grid {
+  display: grid;
+  width: 50em;
+  grid-template-rows: repeat(5, 5em);
+  grid-template-columns: repeat(10, 5em);
+}
+.one {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.tow {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+} */
+#grid {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "leftside content content rightside"
+    "leftside footer footer footer";
+  grid-template-rows: 200px 1fr 3em;
+  grid-template-columns: 20em 1fr 1fr 10em;
+}
+#masthead {
+  grid-area: header;
+  background-color: #e5f907;
+}
+#sidebar {
+  grid-area: leftside;
+  background-color: #c705c0;
+}
+#main {
+  grid-row: content;
+  background-color: #c70505;
+}
+#navbar {
+  grid-area: rightside;
+  background-color: #05c732;
+}
+#footer {
+  grid-area: footer;
+  background-color: #0515c7;
+}
+#olgrid {
+  display: grid;
+  width: 45em;
+  height: 8em;
+  grid-auto-flow: column dense;
+  justify-content: space-around;
+  /* grid-template-columns: repeat(fill,2em);
+  grid-template-rows: repeat(fill, 2em); */
+  border: solid;
+}
+#olgrid li {
+  /* grid-row: auto;
+  grid-column: auto; */
+  width: 7em;
+  height: 1.5em;
+  border: solid;
+}
+#olgrid2 {
+  display: grid;
+  width: 45em;
+  height: 8em;
+  grid-template-columns: repeat(auto-fill,3em);
+  grid-template-rows: repeat(auto-fill,3em);
+  grid-auto-flow: column dense;
+  /* grid-row-gap: 2em;
+  grid-column-gap: 2em; */
+  grid-gap: 2em 2em;
+
+}
+li#one{
+  
+  border: solid;
+  justify-self: stretch;
+  align-self: stretch;
+  justify-self: center;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  
+}
+li#two{
+  grid-row: span 1/3;
+  grid-column: 2/3;
+}
+li#three{
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+li#four{
+  grid-row: 4/5;
+  grid-column: 4/5;
+}
+li#five{
+  grid-row: 5/6;
+  grid-column: 5/6;
+}
+/* #olgrid2 li#li1 {
+  border:solid;
+  grid-row-start: 2;
+  grid-row-start: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+} */
